@@ -153,7 +153,8 @@ export default {
 <style>
 #map{
     height: 400px;
-    width: 86%  ;
+    width: 100%  ;
+    top: 60px;
     float: left 
   }
 </style>

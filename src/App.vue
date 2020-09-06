@@ -2,7 +2,6 @@
   <div id="app">
     <map-widget v-bind:truthvalue="truthValue"/>
     <drop-down/>
-    <decoder @input="propAssignment"/>
     <title-bar/>
   </div>
 </template>
@@ -35,5 +34,8 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
   display: inline;
+}
+body {
+  background-color: #2c3e50   
 }
 </style>

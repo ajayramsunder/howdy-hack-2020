@@ -25,3 +25,9 @@ export default {
 }
 </script>
 
+<style>
+    .el-select{
+        top: 70px;
+        float: 'left'
+    }
+</style>

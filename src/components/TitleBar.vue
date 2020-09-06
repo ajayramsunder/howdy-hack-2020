@@ -6,7 +6,6 @@
 
 <script>
 export default {
-
 }
 </script>
 
@@ -16,5 +15,6 @@ export default {
     color: #FFFFFF;
     text-align: left;
     line-height: 60px;
+    float: left
 }
 </style>
