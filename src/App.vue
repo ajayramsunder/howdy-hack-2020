@@ -1,22 +1,27 @@
 <template>
   <div id="app">
-    <map-widget v-bind:truthvalue=""/>
-    <drop-down
-    <decoder/>
+    <map-widget v-bind:truthvalue="truthValue"/>
+    <drop-down/>
+    <decoder @input="propAssignment"/>
+    <title-bar/>
   </div>
 </template>
 
 <script>
 import MapWidget from './components/InitialMap.vue'
-import Decoder from './components/Decoder.vue'
 import DropDown from './components/DropDown.vue'
+import TitleBar from './components/TitleBar.vue'
 export default {
   name: 'App',
   components: {
     MapWidget,
-    Decoder,
     DropDown,
     TitleBar
+  },
+  methods:{
+    propAssignment(e){
+      this.truthValue = e 
+    }
   }
 }
 </script>

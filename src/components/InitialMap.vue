@@ -16,7 +16,8 @@ export default {
             loc2: false,
             loc3: false,
             loc4: false,
-            loc5: false 
+            loc5: false,
+
         }
     },
     mounted () {
@@ -152,7 +153,7 @@ export default {
 <style>
 #map{
     height: 400px;
-    width: 75%  ;
-    float: right
+    width: 86%  ;
+    float: left 
   }
 </style>
