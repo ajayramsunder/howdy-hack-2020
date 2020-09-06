@@ -8,23 +8,19 @@
         "lng": -96.339194
     }, 
     "third_location": {
-        "lat": 30.608693,
-        "lng": -96.339194
-    }, 
-    "fourth_location": {
         "lat": 30.612156,
         "lng": -96.341672
     }, 
-    "fifth_location": {
+    "fourth_location": {
         "lat": 30.615206,
         "lng": -96.341370
     }, 
-    "sixth_location": {
+    "fifth_location": {
         "lat": 30.621374,
         "lng": -96.342757
     }, 
-    "seventh_location": {
+    "sixth_location": {
         "lat": 30.609309,
         "lng": -96.341183
-    } 
+    }
 }

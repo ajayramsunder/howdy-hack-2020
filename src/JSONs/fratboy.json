@@ -1,0 +1,26 @@
+{
+    "first_location": {
+        "lat": 30.6180902,
+        "lng": -96.3452366
+    }, 
+    "second_location": {
+        "lat": 30.620116,
+        "lng": -96.3418698
+    }, 
+    "third_location": {
+        "lat": 30.6077192,
+        "lng": -96.3441401
+    }, 
+    "fourth_location": {
+        "lat": 30.625957,
+        "lng": -96.338957
+    }, 
+    "fifth_location": {
+        "lat": 30.6206163,
+        "lng": -96.2988469
+    }, 
+    "sixth_location": {
+        "lat": 30.613044,
+        "lng": -96.344697
+    }
+}
