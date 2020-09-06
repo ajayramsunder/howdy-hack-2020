@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <map-widget/>
+    <map-widget v-bind:truthvalue=""/>
+    <drop-down
     <decoder/>
   </div>
 </template>
@@ -8,11 +9,14 @@
 <script>
 import MapWidget from './components/InitialMap.vue'
 import Decoder from './components/Decoder.vue'
+import DropDown from './components/DropDown.vue'
 export default {
   name: 'App',
   components: {
     MapWidget,
-    Decoder
+    Decoder,
+    DropDown,
+    TitleBar
   }
 }
 </script>
