@@ -1,16 +1,18 @@
 <template>
   <div id="app">
     <map-widget/>
+    <decoder/>
   </div>
 </template>
 
 <script>
 import MapWidget from './components/InitialMap.vue'
-
+import Decoder from './components/Decoder.vue'
 export default {
   name: 'App',
   components: {
-    MapWidget
+    MapWidget,
+    Decoder
   }
 }
 </script>
@@ -23,5 +25,6 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  display: inline;
 }
 </style>

@@ -3,22 +3,19 @@
 </template>
 
 <script>
-import json from '@/JSONs/money.json'
 export default {
     data () {
         return {
-            dummy: NaN,
-            dummy_object: {lat: 30, lng: 40},
-            myJson: json
         }
     },
     mounted () {
         this.createMap()
-        console.log(this.myJson.first_location)
         // eslint-disable-next-line
         google.maps.event.addDomListener(this.map, 'click', (event) =>{
             this.addClickMarker(event.latLng)
         })
+        // eslint-disable-next-line
+        this.infowindow = new google.maps.InfoWindow()
     }, 
     methods: {
         createMap () {
@@ -34,8 +31,13 @@ export default {
             this.markers.push(this.new_marker)
             this.currentPlace = null
             // }
-    },
-
+        },
+        bindInfoWindow (marker, map, infowindow, description) {
+            marker.addListener('click', function () {
+                infowindow.setContent(description)
+                infowindow.open(map, marker)
+            })
+        },
     }  
 }
 </script>
@@ -44,5 +46,6 @@ export default {
 #map{
     height: 400px;
     width: 75%  ;
+    float: right
   }
 </style>
