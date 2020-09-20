@@ -4,6 +4,10 @@
 
 <script>
 import mojson from '@/JSONs/money.json'
+import song from '@/assets/the_great_pretender.mp3'
+var audio = new Audio(song)
+audio.volume = 0.3
+
 export default {
     props: {
         truthvalue: {type: String}
@@ -17,6 +21,7 @@ export default {
             loc3: false,
             loc4: false,
             loc5: false,
+            loc6: false
 
         }
     },
@@ -92,17 +97,14 @@ export default {
                 //eslint-disable-next-line
                 this.infoWindow = new google.maps.InfoWindow({})
                 this.bindInfoWindow(this.marker,this.map,this.infoWindow,"<h><b>Ford Hall of Champions</b></h> <p>Han rushes to the Ford Hall of Champions. Interestingly, the Hall is closed off, in the middle of the dark pathway, he sees the silhouette of a tied up Shmoney Manziel. Han looks around, but nothing’s to be seen anywhere. He cautiously cuts Manziel loose, all the while wondering who led him on this wild goose chase only to give Manziel back, and why.</p>")
-                
+                this.loc6 = true
+                if (this.loc6 == true) {
+                    audio.play()
+                }
              }
             
         })
-        
-        
-        
 
-        
-        
-        
     }, 
     methods: {
         createMap () {
@@ -118,14 +120,6 @@ export default {
         })
         },
 
-        /*openInfoWindow(){
-            // eslint-disable-next-line
-            this.infoWindow = new google.maps.InfoWindow({
-                content: "Hello Han"
-
-            })
-
-        },*/
         addMarker(latlng){
             // eslint-disable-next-line
             this.marker = new google.maps.Marker({
@@ -146,6 +140,7 @@ export default {
             this.currentPlace = null
             // }
         },
+
     }  
 }
 </script>
